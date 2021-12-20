@@ -1,0 +1,14 @@
+const xlsx = require("xlsx");
+const dataPathExcel = "test2.xlsx";
+const wb = xlsx.readFile(dataPathExcel);
+const sheetName = wb.SheetNames[1];
+const sheetValue = wb.Sheets[sheetName];
+console.log(sheetValue);
+const excelData = xlsx.utils.sheet_to_json(sheetValue);
+console.log(excelData);
+console.log((sheetValue.H39.v = "elephants"));
+// const excelData1 = xlsx.utils.sheet_to_txt(sheetValue);
+// console.log(excelData1);
+// const excelData2 = xlsx.utils.sheet_to_html(sheetValue);
+// console.log(excelData2);
+xlsx.writeFile(wb, "writetest.xlsx");

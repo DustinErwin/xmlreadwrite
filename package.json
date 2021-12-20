@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DustinErwin/xmlreadwrite/issues"
   },
-  "homepage": "https://github.com/DustinErwin/xmlreadwrite#readme"
+  "homepage": "https://github.com/DustinErwin/xmlreadwrite#readme",
+  "dependencies": {
+    "xlsx": "^0.17.4"
+  }
 }
